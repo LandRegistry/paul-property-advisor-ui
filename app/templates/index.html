@@ -29,6 +29,16 @@
     map: map
   });
 }
+// For the "conversation started at" bit
+function getDate() { 
+  Months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec']; 
+  date = new Date(); 
+  return date.getDate() + ' '+ Months[date.getMonth()] + ' ' +date.getFullYear(); 
+} 
+function getTime() { 
+  time = new Date().toTimeString(); 
+  return time.substring(0, time.indexOf(' '));   
+} 
 </script>
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUOe352MNySX1iv47TAHrAviWVaDD6Atw&callback=initMap">
 </script>
