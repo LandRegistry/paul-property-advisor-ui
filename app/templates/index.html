@@ -14,6 +14,34 @@
 
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/updated-styles.min.css" />
+    <script>
+
+   function initMap() {
+  var uluru = {lat: 51.463058, lng: -2.603428};
+  var centers = {lat: 51.463558, lng: -2.603428};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 19,
+    center: centers,
+   mapTypeId: 'satellite'
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+}
+// For the "conversation started at" bit
+function getDate() { 
+  Months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec']; 
+  date = new Date(); 
+  return date.getDate() + ' '+ Months[date.getMonth()] + ' ' +date.getFullYear(); 
+} 
+function getTime() { 
+  time = new Date().toTimeString(); 
+  return time.substring(0, time.indexOf(' '));   
+} 
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBUOe352MNySX1iv47TAHrAviWVaDD6Atw&callback=initMap">
+</script>
     </head>
     <body>
       <div id="root"></div>
