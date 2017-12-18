@@ -53,12 +53,12 @@ render(
                 Because it is a freehold property the charge can be redeemed on purchase with a single payment of £30.</p>
             </Panel>
 
-            <Panel title="Restricted Covenant (Business)" level="warning">
+            <Panel title="Restrictive Covenant (Business)" level="warning">
               <p>You are unable to trade from your premises.
                 Therefore you will not be able to run a business from your home.</p>
             </Panel>
 
-            <Panel title="Restricted Covenant (External)" level="warning">
+            <Panel title="Restrictive Covenant (External)" level="warning">
               <p>You are prohibited from displaying your washing in a lewd and lascivious manner.</p>
             </Panel>
 
@@ -145,7 +145,7 @@ render(
           <TabPane id="CoalAuthority" tabs={tabs}>
           <div className="coal-container">
           <img src="./images/Coal.jpg" alt="Coal Mining Map" className="coal-image"/>
-          <p>Within, or within 2 metres of, the boundry of the property there is 1 mine entry, the approximate position of which is shown on the enquiry boundry plot.</p>
+          <p>Within, or within 2 metres of, the boundary of the property there is 1 mine entry, the approximate position of which is shown on the enquiry boundary plot.</p>
           <p>There is no record of what steps, if any, have taken to treat the mine entry.</p>
           <p>For an additional fee, the Coal Authority can provide a Mine Entry Interpretive Report.</p>
           </div>

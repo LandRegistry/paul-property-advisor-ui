@@ -68,7 +68,7 @@ class ChatForm extends React.Component {
             if(data.output.tab) {
                 this.tabs.setActiveTab(data.output.tab)
                 if(data.output.tab === 'CoalAuthority') {
-                    this.guide.addStep(1, 'CoalAuthority', 'Coal Authority', 'Within, or within 2 metres of, the boundry of the property there is 1 mine entry. You should request a Mine Entry Interpretive Report from the Coal Authority before you proceed.', 'warning')
+                    this.guide.addStep(1, 'CoalAuthority', 'Coal Authority', 'Within, or within 2 metres of, the boundary of the property there is 1 mine entry. You should request a Mine Entry Interpretive Report from the Coal Authority before you proceed.', 'warning')
                 } else if(data.output.tab === 'KnotweedInfo') {//this references the ID
                   //  this.guide.addStep(2, 'KnotweedInfo', 'Knotweed', 'random text', 'warning')
                 } else if(data.output.tab === 'Trees') {//this references the ID
