@@ -144,7 +144,7 @@ render(
 
           <TabPane id="CoalAuthority" tabs={tabs}>
           <div className="coal-container">
-          <img src="./images/Coal.jpg" alt="Coal Mining Map" className="coal-image"/>
+          <img src="./images/Coal.png" alt="Coal Mining Map" className="coal-image"/>
           <p>Within, or within 2 metres of, the boundary of the property there is 1 mine entry, the approximate position of which is shown on the enquiry boundary plot.</p>
           <p>There is no record of what steps, if any, have taken to treat the mine entry.</p>
           <p>For an additional fee, the Coal Authority can provide a Mine Entry Interpretive Report.</p>
@@ -195,14 +195,14 @@ find out about the roots. There maybe a cost associated with tree surgeon only.
                   </TabPane>
                   <TabPane id="Development" tabs={tabs}>
                     <div className="coal-container">
-                    <img src="./images/Development.jpg" alt="Development Image" className="coal-image"/>
+                    <img src="./images/Development.png" alt="Development Image" className="coal-image"/>
                     <p>Here is a map of the local development in the area
                       </p>
                     </div>
                     </TabPane>
           <TabPane id="Crime" tabs={tabs}>
             <div className="crime-table">
-              <h2>June 2017 crime and ASB breakdowns and trends for Cotham</h2>
+              <h2>June 2017 crime and ASB breakdowns and trends for Digital Street</h2>
 
               <div className="crime-tables">
                 <table>
