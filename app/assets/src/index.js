@@ -161,9 +161,7 @@ render(
         </TabPane>
           <TabPane id="Title" tabs={tabs}>
             <div className="coal-container">
-            <img src="./images/Title.jpg" alt="Title Image" className="coal-image"/>
-
-
+            <img src="./images/Title.jpg" alt="Title Image" className="tree-image"/>
             <p>The boundary of the property can be found on the image above. If you want to order a high quality image
             request <a href='#'> here </a>
             </p>
@@ -171,7 +169,7 @@ render(
           </TabPane>
           <TabPane id="Trees" tabs={tabs}>
             <div className="coal-container">
-            <img src="./images/Trees.jpg" alt="Tree Image" className="coal-image"/>
+            <img src="./images/Trees.jpg" alt="Tree Image" className="tree-image"/>
             <p>Try viewing the property with Google Maps, there is a marker on the map directing you to the property. If there are overhanging trees you can contact a tree surgeon to
 find out about the roots. There maybe a cost associated with tree surgeon only.
               </p>
