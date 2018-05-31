@@ -21,9 +21,17 @@ const guide = new Guide();
 
 render(
   <div className="wrapper">
-    <DevTools />
+    {/* <DevTools /> */}
 
-    <div className="header">HM Land Registry <strong>Property Advisor</strong></div>
+    <div className="header">
+      <div className="title">
+        <p>Digital Street</p>
+        <strong>Property advisor</strong>
+      </div>
+      <div className="logo">
+        <img src="./images/hmlr_logo.png" width="175" alt="HM Land Registry Logo"></img>
+      </div>
+    </div>
 
     <div className="faux-table">
       <div className="faux-table__row">
@@ -36,21 +44,17 @@ render(
 
           <TabPane id="traffic" tabs={tabs}>
             <Panel title="Ground Hazards" level="warning">
-              <p>The property has been identified as being within a coal mining affected area and
-                  as such we recommend that a coal mining report is purchased from the Coal Authority
-                  to better understand the implications. Further information can be obtained
-                  from <a href="https://www.gov.uk/government/organisations/the-coal-authority">here</a>.</p>
-              <p>The property is an intermediate probability radon area as between 3 to 5% of homes are
-                  estimated to be at or above the action level. This does not necessarily mean that
-                  the property has high radon or that there is cause for concern. Public Health England
-                  advises that homes in affected areas should be tested. For further information
-                  please contact Public Health England or go to <a href="www.ukradon.org">UK Radon</a>.</p>
+              <p> This property is within a coal mining affected area. We recommend that a coal mining report is purchased from the
+              <a href="https://www.gov.uk/government/organisations/the-coal-authority"> Coal Authority </a> to better understand how this affects the property. </p>
+
+              <p> This property's radon risk is: intermediate. Between 3 to 5% of homes are estimated to be at or above the action level. This doesn't always mean that the property has high radon levels or that there's cause for concern.
+              Public Health England advises that homes in affected areas should be tested.
+              For further information please contact <a href="https://www.gov.uk/government/organisations/public-health-england"> Public Health England </a> or visit <a href="www.ukradon.org">UK Radon</a></p>
             </Panel>
 
-
             <Panel title="Deed" level="warning">
-              <p>The land in this title is subject to a perpetual yearly rentcharge of £12.12.
-                Because it is a freehold property the charge can be redeemed on purchase with a single payment of £30.</p>
+              <p>You'll need to pay a yearly rentcharge of £12.12 on this land.
+              This is a freehold property. If you purchase it, you can pay off the rentcharge with one payment of £30. </p>
             </Panel>
 
             <Panel title="Restrictive Covenant (Business)" level="warning">
@@ -145,9 +149,8 @@ render(
           <TabPane id="CoalAuthority" tabs={tabs}>
           <div className="coal-container">
           <img src="./images/Coal.png" alt="Coal Mining Map" className="coal-image"/>
-          <p>Within, or within 2 metres of, the boundary of the property there is 1 mine entry, the approximate position of which is shown on the enquiry boundary plot.</p>
-          <p>There is no record of what steps, if any, have taken to treat the mine entry.</p>
-          <p>For an additional fee, the Coal Authority can provide a Mine Entry Interpretive Report.</p>
+          <p>There’s 1 mine entry inside or very close to this property’s boundary.
+You should request a Mine Entry Interpretive Report before you continue. </p>
           </div>
           </TabPane>
 
@@ -266,7 +269,7 @@ find out about the roots. There maybe a cost associated with tree surgeon only.
 
       <div className="faux-table__row">
         <div className="faux-table__cell faux-table__cell--main faux-table__cell--shrink-height faux-table__cell--bottom">
-          <ul className="tabs">
+          {/* <ul className="tabs">
             <TabNav id="guide" title="Guide" tabs={tabs} />
             <TabNav id="traffic" title="Risk" tabs={tabs} />
             <TabNav id="CoalAuthority" title="Coal" tabs={tabs} />
@@ -277,7 +280,7 @@ find out about the roots. There maybe a cost associated with tree surgeon only.
             <TabNav id="Garden" title="Garden" tabs={tabs} />
             <TabNav id="Development" title="Development" tabs={tabs} />
             <TabNav id="Crime" title="Crime" tabs={tabs} />
-          </ul>
+          </ul> */}
         </div>
         <div className="faux-table__cell faux-table__cell--side faux-table__cell--shrink-height send-message__cell">
           <ChatForm store={store} tabs={tabs} guide={guide} />

@@ -5,7 +5,7 @@ html * {
 body {
     margin: 0;
     padding: 0;
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
     color: #333;
 }
 
@@ -72,7 +72,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .send-message__cell {
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 
 .send-message__cell form #chat {
@@ -92,10 +92,34 @@ h1, h2, h3, h4, h5, h6 {
     left: 0;
     right: 0;
     height: 80px;
-    line-height: 80px;
+    /* line-height: 80px; */
     background-color: #fff;
     box-shadow: 0 0 25px rgba(0,0,0,0.1);
     padding: 0 80px;
+    border-bottom: 1px solid black;
+}
+
+.title {
+    height: 100%;
+    float: left;
+    align-items : center;
+}
+
+.title p {
+    line-height: 35px;
+    margin-bottom: -10px;
+}
+
+.logo {
+    height: 100%;
+    float: right;
+    display: flex;
+    align-items : center;
+
+}
+
+.logo img {
+    /* vertical-align: middle; */
 }
 
 /* Form */
@@ -228,17 +252,39 @@ form.loading:before {
     display: none;
 }
 
+.panel--neutral {
+    border-top-color: grey;
+}
+
 .panel--success {
     border-top-color: green;
 }
+
+.panel--success p {
+    border-left: 3px solid green;
+    padding-left: 10px;
+}
+
 
 .panel--incomplete {
     border-top-color: #FFB000;
 }
 
+.panel--incomplete p {
+    border-left: 3px solid #FFB000;
+    padding-left: 10px;
+}
+
 .panel--warning {
     border-top-color: #FF5C49;
 }
+
+.panel--warning p {
+    border-left: 3px solid #FF5C49;
+    padding-left: 10px;
+
+}
+
 
 .panel h2 {
     margin-top: 0;

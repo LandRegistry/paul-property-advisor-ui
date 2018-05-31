@@ -3,12 +3,12 @@ import Step from './Step'
 
 export default class Conversation {
   @observable steps = [
-    {key: "property", title:"Choose your property", text:"", status:"incomplete"},
-    {key: "offer", title:"Make an offer", text:"Not complete", status:"incomplete"},
-    {key: "insure", title:"Insure property", text:"Not complete", status:"incomplete"},
-    {key: "mortgage", title:"Instant mortgage", text:"Not complete", status:"incomplete"},
-    {key: "accept", title:"Offer acceptance", text:"Not complete", status:"incomplete"},
-    {key: "move", title:"Move in", text:"Not complete", status:"incomplete"}
+    {key: "property", title:"1. Choose your property", text:"", status:"neutral"},
+    {key: "offer", title:"2. Make an offer", text:"", status:"neutral"},
+    {key: "insure", title:"3. Insure property", text:"", status:"neutral"},
+    {key: "mortgage", title:"4. Instant mortgage", text:"", status:"neutral"},
+    {key: "accept", title:"5. Offer acceptance", text:"", status:"neutral"},
+    {key: "move", title:"6. Move in", text:"", status:"neutral"}
   ];
 
   @action
