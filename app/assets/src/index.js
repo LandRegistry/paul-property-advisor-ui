@@ -147,31 +147,30 @@ render(
           </TabPane> */}
 
           <TabPane id="CoalAuthority" tabs={tabs}>
-          <div className="coal-container">
-          <img src="./images/Coal.png" alt="Coal Mining Map" className="coal-image"/>
+          <div className="chat-container">
+          <img src="./images/Coal.png" alt="Coal Mining Map" className="chat-image"/>
           <p>There’s 1 mine entry inside or very close to this property’s boundary.
 You should request a Mine Entry Interpretive Report before you continue. </p>
           </div>
           </TabPane>
 
         <TabPane id="KnotweedInfo" tabs={tabs}>
-          <div className="coal-container">
-          <img src="./images/Knotweed.jpg" alt="Knotweed Image" className="coal-image"/>
+          <div className="chat-container">
+          <img src="./images/Knotweed.jpg" alt="Knotweed Image" className="chat-image"/>
           <p>Contact Natural England. Information available here:
             <a href= 'https://www.gov.uk/guidance/prevent-the-spread-of-harmful-invasive-and-non-native-plants'> https://www.gov.uk/guidance/prevent-the-spread-of-harmful-invasive-and-non-native-plants</a>
             </p>
           </div>
         </TabPane>
           <TabPane id="Title" tabs={tabs}>
-            <div className="coal-container">
+            <div className="chat-container">
             <img src="./images/Title.jpg" alt="Title Image" className="tree-image"/>
-            <p>The boundary of the property can be found on the image above. If you want to order a high quality image
-            request <a href='#'> here </a>
-            </p>
+            <p>The highlighted area shows the property's boundary.</p> 
+            <p><a href='#'>Need a high quality image?</a></p>
             </div>
           </TabPane>
           <TabPane id="Trees" tabs={tabs}>
-            <div className="coal-container">
+            <div className="chat-container">
             <img src="./images/Trees.jpg" alt="Tree Image" className="tree-image"/>
             <p>Try viewing the property with Google Maps, there is a marker on the map directing you to the property. If there are overhanging trees you can contact a tree surgeon to
 find out about the roots. There maybe a cost associated with tree surgeon only.
@@ -181,32 +180,28 @@ find out about the roots. There maybe a cost associated with tree surgeon only.
 
 
               <TabPane id="View" tabs={tabs}>
-                <div className="coal-container">
-                <img src="./images/View.jpg" alt="View Image" className="coal-image"/>
-                <p>Here is the front of the property, according to Google maps streetview
-                  </p>
+                <div className="chat-container">
+                <img src="./images/front of house.jpg" alt="View Image" className="chat-image"/>                
                 </div>
                 </TabPane>
 
                 <TabPane id="Garden" tabs={tabs}>
-                  <div className="coal-container">
-                  <img src="./images/Garden.jpg" alt="Garden Image" className="coal-image"/>
-                  <p>Here is an image of the garden associated to the property.  </p>
+                  <div className="chat-container">
+                  <img src="./images/back garden.jpg" alt="Garden Image" className="chat-image"/>
                   </div>
                   </TabPane>
                   <TabPane id="Development" tabs={tabs}>
-                    <div className="coal-container">
-                    <img src="./images/Development.png" alt="Development Image" className="coal-image"/>
+                    <div className="chat-container">
+                    <img src="./images/Development.png" alt="Development Image" className="chat-image"/>
                     <p>Here is a map of the local development in the area
                       </p>
                     </div>
                     </TabPane>
           <TabPane id="Crime" tabs={tabs}>
-            <div className="crime-table">
-              <h2>June 2017 crime and ASB breakdowns and trends for Digital Street</h2>
-
-              <div className="crime-tables">
-                <table>
+            <div className="chat-container">
+              <h2>June 2017 crime figures for Digital Street</h2>
+              <img src="./images/crime figures bar chart.png" alt="Crime Figures" className="chat-image"/>
+                {/* <table>
                   <tbody>
                     <tr>
                       <th>ASB</th>
@@ -258,6 +253,7 @@ find out about the roots. There maybe a cost associated with tree surgeon only.
 
             <div className="crime-map">
               <img src="/images/crime-stats.png" />
+            </div> */}
             </div>
           </TabPane>
         </div>
