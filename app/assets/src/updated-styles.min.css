@@ -64,16 +64,11 @@ button[type="submit"] {
     padding-top: 0;
     padding-bottom: 0.5rem; }
 
-.scroll-pane {
-  padding-top: 3rem; }
   .scroll-pane small {
     font-size: 0.9rem;
     color: grey;
     font-style: italic;
     overflow: scroll;
   }
-
-.header {
-  padding-left: 3rem; }
 
 /*# sourceMappingURL=updated-styles.min.css.map */

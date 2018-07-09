@@ -22,11 +22,13 @@ const guide = new Guide();
 render(
   <div className="wrapper">
     {/* <DevTools /> */}
-
     <div className="header">
+      {/* <a href="http://hmlr-ds-landingscreen.eu-gb.mybluemix.net/#/Landing">HM Land Registry <strong>Property Advisor</strong></a> */}
       <div className="title">
-        <p>Digital Street</p>
-        <strong>Property advisor</strong>
+        <div className="title-sub-section">
+          <a className="title-sub" href="http://hmlr-ds-landingscreen.eu-gb.mybluemix.net/#/Landing">Digital Street
+          <p className="subtitle">Property advisor</p></a>
+        </div>
       </div>
       <div className="logo">
         <img src="./images/hmlr_logo.png" width="175" alt="HM Land Registry Logo"></img>
