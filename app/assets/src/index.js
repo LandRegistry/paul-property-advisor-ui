@@ -26,7 +26,7 @@ render(
       {/* <a href="http://hmlr-ds-landingscreen.eu-gb.mybluemix.net/#/Landing">HM Land Registry <strong>Property Advisor</strong></a> */}
       <div className="title">
         <div className="title-sub-section">
-          <a className="title-sub" href="http://hmlr-ds-landingscreen.eu-gb.mybluemix.net/#/Landing">Digital Street
+          <a className="title-sub" href="http://hmlr-ds-landingscreen.eu-gb.mybluemix.net/#/">Digital Street
           <p className="subtitle">Property advisor</p></a>
         </div>
       </div>
@@ -47,7 +47,7 @@ render(
           <TabPane id="traffic" tabs={tabs}>
             <Panel title="Ground Hazards" level="warning">
               <p> This property is within a coal mining affected area. We recommend that a coal mining report is purchased from the
-              <a href="https://www.gov.uk/government/organisations/the-coal-authority"> Coal Authority </a> to better understand how this affects the property. </p>
+              <a href="https://www.gov.uk/government/organisations/the-coal-authority">Coal Authority</a> to better understand how this affects the property. </p>
 
               <p> This property's radon risk is: intermediate. Between 3 to 5% of homes are estimated to be at or above the action level. This doesn't always mean that the property has high radon levels or that there's cause for concern.
               Public Health England advises that homes in affected areas should be tested.
@@ -166,9 +166,10 @@ You should request a Mine Entry Interpretive Report before you continue. </p>
         </TabPane>
           <TabPane id="Title" tabs={tabs}>
             <div className="chat-container">
-            <img src="./images/Title.jpg" alt="Title Image" className="tree-image"/>
-            <p>The highlighted area shows the property's boundary.</p> 
-            <p><a href='#'>Need a high quality image?</a></p>
+            <img src="./images/screen 8 'plan'.png" alt="Title Image" className="title-image"/>
+            <p>The highlighted area shows the property's boundary.
+            <br></br>
+            <a href='#'>Need a high quality image?</a></p>
             </div>
           </TabPane>
           <TabPane id="Trees" tabs={tabs}>

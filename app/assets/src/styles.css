@@ -477,3 +477,7 @@ form.loading:before {
     width: 50%;
     padding-bottom: 30px;
 }
+
+.title-image {
+    width: 80%;
+}
