@@ -28,7 +28,7 @@ class ChatForm extends React.Component {
         return (
             <form onSubmit={this.handleSubmit} ref="form">
                 <label htmlFor="chat" className="visuallyhidden">Start your chat here</label>
-                <input autoComplete="off" type="text" name="chat" id="chat" placeholder="Type something&hellip;" onChange={this.handleInputChange} value={this.inputValue} />
+                <input autoFocus="true" autoComplete="off" type="text" name="chat" id="chat" placeholder="Type something&hellip;" onChange={this.handleInputChange} value={this.inputValue} />
                 <button type="submit">Send</button>
             </form>
         )

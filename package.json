@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "build": "webpack",
-    "start": "node app/server.js"
+    "dev": "webpack --watch",
+    "start": "nodemon app/server.js"
   },
   "repository": {
     "type": "git",
@@ -19,7 +20,8 @@
     "babel-preset-react": "^6.5.0",
     "babel-preset-stage-1": "^6.5.0",
     "webpack": "^3.5.5",
-    "webpack-dev-server": "^2.7.1"
+    "webpack-dev-server": "^2.7.1",
+    "webpack-livereload-plugin": "^1.2.0"
   },
   "dependencies": {
     "body-parser": "^1.17.2",

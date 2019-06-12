@@ -2,10 +2,14 @@ html * {
     box-sizing: border-box;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: "Helvetica", "Arial", sans-serif;
+    font-family: "Open Sans", "Helvetica", "Arial", sans-serif;
     color: #333;
 }
 
@@ -23,7 +27,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .wrapper {
     height: 100%;
-    padding-top: 80px;
+    /* padding-top: 80px; */
     position: relative;
 }
 
@@ -72,7 +76,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .send-message__cell {
-    padding: 0 30px;
+    /* padding: 0 30px; */
 }
 
 .send-message__cell form #chat {
@@ -87,16 +91,62 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Header */
 .header {
-    position: absolute;
+    padding: 0rem 2rem;
+    position: relative;
     top: 0;
     left: 0;
     right: 0;
     height: 80px;
-    line-height: 80px;
     background-color: #fff;
     box-shadow: 0 0 25px rgba(0,0,0,0.1);
-    padding: 0 80px;
-}
+    padding: 0 100px;
+    border-bottom: 1px solid black;
+  }
+  
+  .title-section {
+      height: 100%;
+      float: left;
+  }
+  
+  .title-main {
+      font-size: 1.3em;
+      line-height: 80px;
+      color: #000;
+      text-decoration: none;
+  }
+  
+  .title-sub {
+      color: #000;
+      font-size: 1.3em;
+      text-decoration: none;
+      font-weight: 200;
+  }
+  
+  .title-sub-section {
+      height: 100%;
+      float: left;
+      padding-top: 15px;
+  }
+  
+  .subtitle {
+      font-size: 1em;
+      color: #000;
+      font-weight: bold;
+      text-decoration: none;
+      margin: 0px;
+  }
+  
+  .logo {
+      height: 100%;
+      float: right;
+      display: flex;
+      align-items : center;
+  }
+  
+  .logo img {
+      padding-top: 10px;
+      vertical-align: middle;
+  }
 
 /* Form */
 input[type='text'] {
@@ -228,17 +278,39 @@ form.loading:before {
     display: none;
 }
 
+.panel--neutral {
+    border-top-color: grey;
+}
+
 .panel--success {
     border-top-color: green;
 }
+
+.panel--success p {
+    border-left: 3px solid green;
+    padding-left: 10px;
+}
+
 
 .panel--incomplete {
     border-top-color: #FFB000;
 }
 
+.panel--incomplete p {
+    border-left: 3px solid #FFB000;
+    padding-left: 10px;
+}
+
 .panel--warning {
     border-top-color: #FF5C49;
 }
+
+.panel--warning p {
+    border-left: 3px solid #FF5C49;
+    padding-left: 10px;
+
+}
+
 
 .panel h2 {
     margin-top: 0;
@@ -317,11 +389,11 @@ form.loading:before {
 .scroll-pane {
     height: 100%;
     overflow-y: scroll;
-    padding: 80px 60px 60px 60px;
+    padding: 40px 60px 60px 60px;
 }
 
 .chat-scroll-pane {
-    padding: 30px;
+    padding: 30px 30px 0px 30px;
 }
 
 /* Crime */
@@ -377,9 +449,9 @@ form.loading:before {
     text-align: center;
 }
 
-.coal-image {
+.chat-image {
     width: 100%;
-    padding-bottom: 30px;
+    padding: 30px 0px;
 }
 
 #map {
@@ -387,15 +459,14 @@ form.loading:before {
        width: 100%;
       }
 
-.scroll-pane {
-  padding-top: 3rem; }
-  .scroll-pane small {
+.scroll-pane small {
     font-size: 0.9rem;
     color: grey;
     font-style: italic;
     overflow: scroll;
-  }
-.coal-container {
+}
+
+.chat-container {
     border-top: 4px solid #3c6df0;
     background-color: #fff;
     box-shadow: 0 0 40px rgba(0,0,0,0.1);
@@ -405,4 +476,8 @@ form.loading:before {
 .tree-image {
     width: 50%;
     padding-bottom: 30px;
+}
+
+.title-image {
+    width: 80%;
 }
